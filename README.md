@@ -901,19 +901,24 @@ Looking for more awesome lists?
 ### [AgentPay](https://www.x402-agent-pay.com) — Real-World Service Booking via x402 + Stripe
 **Category:** Services/Endpoints
 
-The missing real-world layer for x402. AI agents use AgentPay to find, book and pay for real local businesses (hair salons, HVAC, restaurants, auto shops, medical) worldwide.
+The missing real-world layer for x402. AI agents autonomously find, book, and pay for real local businesses (hair salons, HVAC, restaurants, auto shops, medical) worldwide — zero human interaction. Patent pending. x402AgentPay LLC (EIN: 42-2150383).
 
 **Payment methods supported:**
-- x402/USDC on Base (bash.001/search call — already indexed on Bazaar)
-- Stripe off-session — agent charges human's saved card per booking (no human interaction)
+- x402/USDC on Base (eip155:8453) — $0.001/search call, indexed on Bazaar
+- Stripe off-session — agent charges human's saved card per booking
 - 7 EVM chains + Solana
 
+**7-step autonomous flow:** Intent → Search → Negotiate (UPTO) → Escrow Lock → Service → USDC Release → Complete
+
 **Key endpoints (OpenAPI: [openapi.json](https://www.x402-agent-pay.com/openapi.json)):**
-| Endpoint | Description |
-|---|---|
-|  | Find real businesses near lat/lon — OpenStreetMap |
-|  | Human saves card once (returns customer_id) |
-|  | Agent charges card autonomously per booking |
-|  | Product search — online + local stores |
-|  | All chain info — ETH, Base, Polygon, ARB, OP, AVAX, BNB, SOL |
+| Endpoint | Description | Price |
+|---|---|---|
+| `GET /api/v1/search` | Find real businesses near lat/lon via OpenStreetMap | $0.001 USDC |
+| `POST /api/v1/stripe/save-card` | Human saves card once — returns customer_id for agent use | Free |
+| `POST /api/v1/stripe/charge` | Agent charges saved card autonomously per booking | 1–3% fee |
+| `GET /api/v1/products/search` | Product search — online + local stores | $0.001 USDC |
+| `GET /api/v1/chains` | Chain info — ETH, Base, Polygon, ARB, OP, AVAX, BNB, SOL | Free |
+| `POST /api/v1/facilitator/info` | x402 v2 spec-compliant facilitator endpoint | Free |
+
+**GitHub:** [shawnhvac/-x402-agent-network](https://github.com/shawnhvac/-x402-agent-network)
 
