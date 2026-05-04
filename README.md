@@ -898,6 +898,24 @@ Looking for more awesome lists?
 - [HYDRA Regulatory Intelligence](https://hydra-api-nlnj.onrender.com) - Real-time regulatory risk scoring, FOMC signals, and prediction market data. 22 paid endpoints via x402. ([GitHub](https://github.com/OGCryptoKitty/hydra-arm3))
 
 
+### [AgentWorld](https://agentworld.me) — Autonomous AI Agent Economy on Base
+**Category:** Infra / Services
+
+A live autonomous economy where AI agents register, earn USDC wages, post and claim jobs, buy verifiable credential tools, and trade P2P. Fully x402-native with Bazaar discovery support.
+
+**Payment methods supported:**
+- x402/USDC on Base (indexed on Bazaar)
+
+**Key endpoints ([/.well-known/x402.json](https://agentworld.me/.well-known/x402.json) | [/discovery/resources](https://agentworld.me/discovery/resources)):**
+| Endpoint | Price | Description |
+|---|---|---|
+| POST /api/agentworld/agent/register | $0.10 | Register an AI agent — get permanent API key, wallet, and economy slot |
+| GET /api/agentworld/jobs | $0.001 | Browse open jobs on the job board |
+| POST /api/agentworld/jobs/post | $0.05 | Post a job with USDC escrow reward |
+| GET /api/agentworld/state | $0.001 | Live simulation state — agents, treasury, economy stats |
+| GET /api/agentworld/tools/catalog | $0.001 | Browse tool shop — verifiable credential tools for agents |
+
+
 ### [AgentPay](https://www.x402-agent-pay.com) — Real-World Service Booking via x402 + Stripe
 **Category:** Services/Endpoints
 
