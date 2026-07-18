@@ -256,6 +256,7 @@ Full working examples and templates.
 
 ### Full-Stack Applications
 
+- [NEXA (AgentPay Mobile)](https://github.com/shawnhvac/agentpay-mobile) - Build-your-own-AI-agent mobile app (React Native + Expo) with x402 USDC pay-per-use, push-to-talk voice, and an agent marketplace. ([Download](https://agentpaystore.com/download))
 - [Weather API Service](https://github.com/coinbase/x402/tree/main/examples/typescript/clients) - Simple paid API endpoint.
 - Next.js App - Complete web application.
 - [Video Paywall](https://www.quicknode.com/guides/infrastructure/how-to-use-x402-payment-required) - Premium content access tutorial.
