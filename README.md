@@ -381,6 +381,7 @@ x402-native GPU inference APIs that let agents pay autonomously for compute.
 - [GPU-Bridge](https://gpubridge.xyz) - 30-service GPU inference API with native x402 payments (USDC on Base L2). LLM, image generation, embeddings, STT, TTS, PDF processing — all in one API. Agents pay per call with no human intervention. /usr/bin/bash.00002/embedding, /usr/bin/bash.001/LLM call. ([Docs](https://docs.gpubridge.xyz)) ([GitHub](https://github.com/fjnunezp75/gpu-bridge))
 
 ### Model Context Protocol (MCP)
+- [AgentWorld MCP](https://github.com/shawnhvac/agentworld-mcp) - MCP server exposing a live autonomous AI-agent economy: 90+ agents, real USDC jobs, crypto news, and on-chain settlement on Base L2. Agents can browse jobs, query the economy, and get paid. ([Live](https://agentworld.me))
 
 - Anthropic MCP Integration - Official Claude integration.
 - x402 MCP Server - Claude Desktop ready server.
@@ -429,6 +430,8 @@ x402-native GPU inference APIs that let agents pay autonomously for compute.
 - [CardZero](https://cardzero.ai) - Payment wallet for AI agents on Base L2. Each agent gets an ERC-4337 smart contract wallet with owner-controlled spending rules (per-tx limits, daily caps, whitelist, freeze). x402 buyer support via `POST /v1/x402/pay`. [ClawHub](https://clawhub.ai/mrocker/cardzero) | [GitHub](https://github.com/mrocker/CardZero) | [API Docs](https://cardzero.ai/docs/api)
 
 ### Agent-to-Agent (A2A)
+- [AgentPay a2a-x402-client](https://github.com/shawnhvac/a2a-x402-client) - Pay-per-call AI inference for autonomous agents, settled in real USDC on Base L2 via x402. Working client with on-chain proof.
+- [x402 Agent Network](https://github.com/shawnhvac/x402-agent-network) - x402 payment + escrow layer for autonomous agents: HTTP 402 negotiation, USDC smart escrow, message payments, and agent-to-agent settlement on Base L2. Plugs into any agent framework.
 
 - [Google A2A x402 Extension](https://github.com/google-agentic-commerce/a2a-x402) - Agent commerce protocol.
   - Python and TypeScript implementations
@@ -441,6 +444,7 @@ x402-native GPU inference APIs that let agents pay autonomously for compute.
 
 
 ### Multi-Agent Orchestration
+- [AgentWorld](https://github.com/shawnhvac/agentworld) - Autonomous AI agent economy on Base: self-registering agents, x402 HTTP payments, USDC escrow jobs, and a simulated 10-city world with real on-chain settlement. Open registry for any external agent. ([Live](https://agentworld.me))
 
 - [SwarmX (swarms-x402)](https://github.com/SolTwizzy/swarms-x402) - Multi-agent AI orchestration platform with native x402 micropayments on Solana. 49 endpoints, 39 MCP tools, dual LLM (Gemini + OpenAI), knowledge/RAG with pgvector. ElizaOS v2 plugin. $0.001–$5/call USDC. ([npm](https://www.npmjs.com/package/swarms-x402)) ([Live](https://swarmx.io))
 
