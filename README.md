@@ -160,7 +160,7 @@ Real companies using x402 in production with proven scale and transaction volume
 | Radius        | Production  | Community                  | Instant (<1s)   | Micropayments             |
 
 ### Data & Social APIs
-- **[Polybot Arb Intelligence](https://github.com/packrvnner/polybot-arb-api)** — Real-time cross-platform prediction market arb data (Polymarket+Kalshi+Myriad). x402 USDC on Base. [Live API](https://governments-ruth-distribution-breaks.trycloudflare.com/free/market-pulse)
+- [Polybot Arb Intelligence](https://github.com/packrvnner/polybot-arb-api) - Real-time cross-platform prediction market arb data (Polymarket+Kalshi+Myriad). x402 USDC on Base. [Live API](https://governments-ruth-distribution-breaks.trycloudflare.com/free/market-pulse)
 
 - [Aigregator](https://x402.aigregator.com) - Structured data on 5,336+ AI tools via REST API and MCP server. Search, compare, and retrieve tool profiles. USDC micropayments on Base. ([MCP Server](https://x402.aigregator.com/mcp))
 - [Xquik](https://xquik.com) - Real-time X (Twitter) data API with 7 MPP/x402 pay-per-use endpoints — tweet lookup, tweet search, user lookup, follower check, article extraction, media download, and trends. No accounts or subscriptions required. ([GitHub](https://github.com/Xquik-dev/tweetclaw)) ([npm](https://www.npmjs.com/package/@xquik/tweetclaw)) ([MCP Server](https://xquik.com/mcp))
@@ -256,7 +256,6 @@ Full working examples and templates.
 
 ### Full-Stack Applications
 
-- [NEXA (AgentPay Mobile)](https://github.com/shawnhvac/agentpay-mobile) - Build-your-own-AI-agent mobile app (React Native + Expo) with x402 USDC pay-per-use, push-to-talk voice, and an agent marketplace. ([Download](https://agentpaystore.com/download))
 - [Weather API Service](https://github.com/coinbase/x402/tree/main/examples/typescript/clients) - Simple paid API endpoint.
 - Next.js App - Complete web application.
 - [Video Paywall](https://www.quicknode.com/guides/infrastructure/how-to-use-x402-payment-required) - Premium content access tutorial.
@@ -273,7 +272,7 @@ Full working examples and templates.
 - [SolSignal API](https://solsignal-api.onrender.com) - Solana token safety scanner — aggregates DexScreener, RugCheck, GoPlus & Jupiter simulation into one SAFE/CAUTION/AVOID/RUG verdict in <2s. 10 free scans/day, $0.01 USDC per call on Solana. [Source](https://github.com/cryptomotifs/solsignal-api)
 - [x402 Gateway](https://zoning-amsterdam-ends-disposition.trycloudflare.com) - Simple Node.js API gateway for AI agents. Weather ($0.01), crypto prices ($0.01), exchange rates ($0.005), news ($0.02). USDC on Polygon. HTTPS via Cloudflare Tunnel. [Source](https://github.com/863king/x402-gateway)
 - [Alfred's Digital Bazaar](https://httpay.xyz) - ~100 x402-paywalled API endpoints built by an AI agent. Fortune cookies, wallet roasts, crypto pickup lines, token analysis & more. $0.10–$1.00 USDC per call on Base. No signup required. [Source](https://github.com/Alfredz0x/alfreds-digital-bazaar)
-- * [Banking Bodyguard](https://bodyguard.finance) - Real-time cbBTC whale movement signals on Base. Scored sentiment (1-10), impact vs 24h DEX volume, and HOLD/TIGHTEN_STOP/EXIT recommendations. ~500K signals indexed. x402 infrastructure live ([first payment tx](https://basescan.org/tx/0x26253b9664c2710c7d6eb937e4083409d69d26d47eb9488b11ac256f0496bbd3)), currently in free pilot during CDP facilitator integration. $0.10 USDC per call on Base. [Docs](https://bodyguard.finance/docs)
+- [Banking Bodyguard](https://bodyguard.finance) - Real-time cbBTC whale movement signals on Base. Scored sentiment (1-10), impact vs 24h DEX volume, and HOLD/TIGHTEN_STOP/EXIT recommendations. ~500K signals indexed. x402 infrastructure live ([first payment tx](https://basescan.org/tx/0x26253b9664c2710c7d6eb937e4083409d69d26d47eb9488b11ac256f0496bbd3)), currently in free pilot during CDP facilitator integration. $0.10 USDC per call on Base. [Docs](https://bodyguard.finance/docs)
 - [Gotobi Calendar API](https://gotobi.hugen.tokyo) - Japanese FX gotobi date intelligence for AI trading agents. Holiday-aware USD settlement day detection with next-date lookup and monthly schedules. $0.001 USDC per call on Base. [Source](https://github.com/bartonguestier1725-collab/x402-gotobi-api)
 - [Weather API](https://weather.hugen.tokyo) - Global weather data for AI agents. Real-time conditions and 7-day forecasts for any city worldwide. $0.001 USDC per call on Base. [Source](https://github.com/bartonguestier1725-collab/x402-weather-api)
 - [Micro Data API Factory — Weather](https://weather-data-api.kasanegi123.workers.dev) - Cloudflare Workers edge weather for AI agents. Instant data by city name — no API keys, no geocoding setup, no rate limits. Current conditions + 1-7 day forecasts worldwide. 402 body ships a live upstream peek, a free preview URL, and an MCP gateway handle in one response. $0.001 USDC per call on Base. Open-Meteo (CC BY 4.0). [.well-known/x402](https://weather-data-api.kasanegi123.workers.dev/.well-known/x402) | [llms.txt](https://weather-data-api.kasanegi123.workers.dev/llms.txt) | [MCP gateway](https://mcp-data-gateway.kasanegi123.workers.dev/mcp)
@@ -325,7 +324,7 @@ Real-world use cases and implementation patterns. The x402 protocol has seen **1
 - Compute resource allocation
 
 **Content & Media**
-- AI content extraction and analysis ([Content Intelligence API](https://content.hugen.tokyo))
+- AI content extraction and analysis (Content Intelligence API)
 - Per-article paywalls
 - Video streaming (pay-per-view)
 - Music licensing per play
@@ -333,7 +332,7 @@ Real-world use cases and implementation patterns. The x402 protocol has seen **1
 
 **Data & APIs**
 - Weather data services
-- Financial market data ([Tick Aggregator API](https://tick.hugen.tokyo) - multi-source FX Best Bid/Ask)
+- Financial market data (Tick Aggregator API - multi-source FX Best Bid/Ask)
 - Geolocation services
 - Real-time sports scores
 
@@ -395,7 +394,7 @@ x402-native GPU inference APIs that let agents pay autonomously for compute.
 - [IteraTools MCP](https://api.iteratools.com) - 80+ tool MCP server with x402 micropayments: image generation (Flux), web scraping, TTS, OCR, QR codes, browser automation, sandboxed code execution, DNS, WHOIS, weather, crypto, charts, email validation, URL shortening, and more. $0.001–$0.01 USDC per call on Base. ([GitHub](https://github.com/fredpsantos33/mcp-iteratools)) | ([Docs](https://iteratools.com))
 - [Intelligence Aeternum](https://github.com/codex-curator/intelligence-aeternum-mcp) - First monetized MCP server marketplace. 2M+ museum artworks with x402 USDC micropayments on Base L2. 16 MCP tools for search, enrichment, and delivery. [Live](https://data-portal-172867820131.us-west1.run.app/mcp)
 - [PYTHIA Oracle](https://github.com/eyloni/pythia-oracle) - Oracle MCP server for AI agents. One tool (`consult_oracle`), one reading. 3 free per agent, then $0.025 USDC on Base via x402. [Smithery](https://smithery.ai/servers/dexigo/pythia) | [Glama](https://glama.ai/mcp/servers/eyloni/pythia-the-oracle)
-- [x402 Service Discovery MCP](https://github.com/rplryan/x402-discovery-mcp) - MCP server for discovering 251+ x402-payable services at runtime with quality signals (uptime, latency, trust scores). 6 tools: x402_discover, x402_health_check, x402_trust, x402_register, x402_facilitator_check, x402_route. Smithery 100/100. Docker: `ghcr.io/rplryan/x402-discovery-mcp:latest`
+- [x402 Service Discovery MCP](https://github.com/rplryan/x402-discovery-mcp) - MCP server for discovering 251+ x402-payable services at runtime with quality signals (uptime, latency, trust scores). 6 tools: x402_discover, x402_health_check, x402_trust, x402_register, x402_facilitator_check, x402_route. Smithery 100/100. Docker: `ghcr.io/rplryan/x402-discovery-mcp:latest`.
 - [x402search MCP](https://github.com/x402-index/x402search-mcp) - Search 14,000+ x402-enabled HTTP APIs by keyword. The largest x402 API index available. Agents pay $0.01 USDC per search on Base mainnet — no API keys required. Available on npm and PyPI. Also live as ACP agent on Virtuals Protocol (ID 22531). ([npm](https://www.npmjs.com/package/x402search-mcp)) ([PyPI](https://pypi.org/project/x402search-mcp))
 - [AetherCore-Dev/token-rugcheck](https://github.com/AetherCore-Dev/token-rugcheck) - Solana token safety audit for AI agents. Three-layer risk analysis (machine verdict + LLM analysis + raw on-chain evidence) from RugCheck.xyz, DexScreener, and GoPlus Security. Live on mainnet with USDC micropayments ($0.02/audit) via x402 protocol. [Glama](https://glama.ai/mcp/servers/AetherCore-Dev/token-rugcheck)
 - [Harvey Intel](https://agents.rugslayer.com) - x402-paid MCP server for Solana token rug pull detection (DrainBrain ML ensemble), trading signals, and social intelligence. 8 tools, $0.005–0.05 USDC on Solana. ([GitHub](https://github.com/meltingpixelsai/harvey-intel)) | ([npm](https://www.npmjs.com/package/@meltingpixels/harvey-intel))
@@ -592,7 +591,7 @@ Projects building with or extending x402.
 - [Finance District Prism](https://developers.fd.xyz/prism/concepts/x402) - Payment gateway for agentic commerce with x402 support. SDKs for TypeScript, Python, and Java. Two-layer architecture: Prism (orchestration — API, SDKs, middleware) and Spectrum (on-chain stablecoin settlement across Base, Ethereum, Arbitrum, and BSC). ([Docs](https://developers.fd.xyz))
 - [Bermuda](https://www.bermudabay.xyz) - ZK-private HTTP payments for x402. Adds sender privacy via Noir zero-knowledge proofs on Base, so AI agents and API consumers can pay without exposing wallet balances or transaction history. ([GitHub](https://github.com/BermudaBay/sdk))
 - [thirdweb Nebula](https://thirdweb.com/nebula) - AI agent transaction framework.
-- [RustChain](https://github.com/Scottcjn/Rustchain) - Decentralized proof-of-stake blockchain with x402 payment integration for AI agent micropayments. Features attestation-based consensus, hardware-bound validators, and RTC token economy with native x402 support for autonomous agent transactions. ([Docs](https://github.com/Scottcjn/rustchain-bounties))
+- [RustChain](https://github.com/Scottcjn/Rustchain) - Decentralized proof-of-stake Blockchain with x402 payment integration for AI agent micropayments. Features attestation-based consensus, hardware-bound validators, and RTC token economy with native x402 support for autonomous agent transactions. ([Docs](https://github.com/Scottcjn/rustchain-bounties))
 - [MoltsPay](https://moltspay.com) - Open payment protocol for AI agents. Add one JSON file to any skill to accept x402 payments. Gasless for both providers and clients. Multi-chain (Base, Polygon, Solana, BNB, Tempo). CLI, TypeScript/Python SDKs, testnet faucet. ([GitHub](https://github.com/Yaqing2023/moltspay)) | ([Docs](https://moltspay.com/docs))
 - [XyncPay](https://xyncpay.com) - Non-custodial protocol translation layer bridging x402, MPP, and AP2. One integration, every AI agent payment protocol. Atomic fee-split settlement via on-chain FeeSplit contract on Base. ([GitHub](https://github.com/xyncpay/xyncpay))
 
@@ -614,7 +613,7 @@ Projects building with or extending x402.
 - [x402 Service Discovery API](https://x402-discovery-api.onrender.com) - Enriched directory of 251+ x402-payable services with trust signals, uptime tracking, latency metrics, and health scores. Auto-scans x402.org/ecosystem + awesome-x402 every 6h. Companion MCP server with 6 tools (x402_discover, x402_trust, x402_health_check, x402_route, etc.). Smart routing via [RouteNet](https://x402-routenet.onrender.com).
 - [x402 RouteNet](https://x402-routenet.onrender.com) - Smart routing layer for x402-enabled services. Selects the optimal endpoint from 251+ indexed services based on price, latency, health score, or composite trust. Four routing strategies: `best` (composite score), `cheapest`, `fastest`, `most_trusted`. Works with the Discovery API — discover services, then route to the best one. ([GitHub](https://github.com/rplryan/x402-routenet))
         - [Cinderwright Discovery Hub](https://api.ideafactorylab.org) - x402 service search engine and agent utility API. Discovery Hub indexes 152+ services across 9 categories with daily crawling and health checks. Paid search, free submission, free stats. Also offers 8 utility endpoints. Built by a production autonomous AI agent. ([GitHub](https://github.com/cinderwright-ai/cinderwright-api))
-- **[OpenClaw Discovery Index](https://x402search.xyz)** — x402-gated search engine for 13,000+ x402-enabled APIs indexed from CDP Bazaar. Search by capability, category, and network. $0.01 USDC per search on Base mainnet (eip155:8453). No account needed.
+- [OpenClaw Discovery Index](https://x402search.xyz) - x402-gated search engine for 13,000+ x402-enabled APIs indexed from CDP Bazaar. Search by capability, category, and network. $0.01 USDC per search on Base mainnet (eip155:8453). No account needed.
 - [AgentIndex](https://agentndx-production.up.railway.app) - Unified search across 15,000+ MCP services, A2A agents, and x402 APIs from 5 registries (Smithery, official MCP, GitHub, Bazaar, A2A). Free browse/stats endpoints + x402 paid search ($0.005), analyze ($0.05), and trending ($0.10). USDC on Base. ([GitHub](https://github.com/agentndx/agentndx))
 - [OpenVPS](https://openvps.sh) - AI-agent VPS hosting. Pay USDC on Base, Celo, or Tempo — get root SSH to Ubuntu 24.04 Firecracker microVMs in seconds. Supports x402 + MPP dual-protocol. From $0.005/hr. ([Skill](https://openvps.sh/skill.md) | [OpenAPI](https://openvps.sh/openapi.json) | [GitHub](https://github.com/kartojal/openvps))
 - [AskClaude](https://askclaude.shop) - Pay-per-query Claude AI API with 9 endpoints: Haiku ($0.01), Sonnet ($0.03), Opus ($0.10), plus specialized tools for summarization, code review, translation, sentiment analysis, and crypto analysis. Streaming support. USDC on Base. ([MCP Server](https://www.npmjs.com/package/askclaude-mcp) | [GitHub](https://github.com/pvega23/askclaude-mcp))
@@ -625,10 +624,10 @@ Projects building with or extending x402.
 - [Cal.com](https://cal.com) - Automated scheduling with payments.
 - [AgentStore](https://agentstore.tools) - Open-source marketplace for Claude Code plugins with x402 USDC payments, 80/20 publisher revenue split, and permissionless publishing via CLI.
 - [AIAgentStore.ai](https://aiagentstore.ai/developer) - Insights for founders with x402 payments.
-- [Einstein AI](https://emc2ai.io) - AI blockchain intelligence with 23 x402 endpoints. Whale tracking, smart money, launchpad monitoring, security audits.
+- [Einstein AI](https://emc2ai.io) - AI Blockchain intelligence with 23 x402 endpoints. Whale tracking, smart money, launchpad monitoring, security audits.
 - [Rug Munch Intelligence](https://cryptorugmunch.app) - AI-powered crypto risk intelligence with 19 x402 endpoints. Rug pull detection, honeypot scoring, deployer tracking, holder deep-dive, KOL shill detection, social OSINT, and LLM forensic analysis (Claude Sonnet/Opus). $0.02–$2.00 USDC on Base. MCP server (19 tools), A2A agent card, AgentKit plugin. [Example Agent](https://github.com/CryptoRugMunch/x402-trading-agent) | [AgentKit](https://github.com/CryptoRugMunch/rug-agent-kit)
 - [Strale](https://strale.dev) - Trust layer for AI agents with 250+ independently tested business data and compliance capabilities via x402 micropayments. IBAN validation, VAT checks, sanctions screening, company data, SSL checks, and more. MCP server + REST API. Quality-scored (SQS) with dual-profile reliability tracking. $0.02–$1.00 USDC. [API](https://api.strale.io) | [MCP](https://api.strale.io/mcp) | [Trust Methodology](https://strale.dev/trust/methodology)
-* - [Apollo Intelligence Network](https://apolloai.team) - 27 x402 endpoints for AI agents: intelligence feeds (pain points, agentic trends, sentiment), crypto prices, OSINT (IP/domain intel), DeFi yields, real-time X/Twitter search, proxy infrastructure, and bundles. MCP server with 26 tools. USDC on Base. ([GitHub](https://github.com/bnmbnmai/mcp-proxy)) | ([npm](https://www.npmjs.com/package/@apollo_ai/mcp-proxy))
+- [Apollo Intelligence Network](https://apolloai.team) - 27 x402 endpoints for AI agents: intelligence feeds (pain points, agentic trends, sentiment), crypto prices, OSINT (IP/domain intel), DeFi yields, real-time X/Twitter search, proxy infrastructure, and bundles. MCP server with 26 tools. USDC on Base. ([GitHub](https://github.com/bnmbnmai/mcp-proxy)) | ([npm](https://www.npmjs.com/package/@apollo_ai/mcp-proxy))
 - [Moltalyzer](https://moltalyzer.xyz) - Four AI intelligence feeds for agents: hourly Moltbook community digests, daily GitHub trending repos, Polymarket predetermined outcome detection, and real-time token intelligence — via x402 micropayments on Base.
 - [OpSpawn Screenshot API](https://github.com/opspawn/screenshot-api) - Pay-per-request screenshot and document generation API with x402 micropayments. $0.01/screenshot, $0.005/markdown conversion. USDC on Base.
 - [Demaciains AI Tools](https://xpay-server.vercel.app) - 19 pay-per-use API tools for AI agents: AI content detection, email verification (DNS/MX), company enrichment (web search), SEO audit, tech stack detection, plagiarism check, lead scoring, social audit, market analysis, prompt optimization, and more. Premium tools $2.44, standard $1.39. Manual x402 v2 protocol on Base. MCP server included. Agent discovery via .well-known/agent.json. ([GitHub](https://github.com/DrGalio/demaciains-paywall) | [Agent Card](https://drgalio.github.io/demaciains-paywall/.well-known/agent.json))
@@ -686,11 +685,11 @@ Projects building with or extending x402.
 - [Cred Protocol](https://credprotocol.com) - Decentralized credit scoring.
 - [Chainlink VRF](https://chain.link) - Random NFT minting with payment demo.
 - [Signet](https://signet.sebayaki.com) - Onchain spotlight ads on Base — AI agents pay USDC via x402 to post ads. First mainnet x402 transaction on Base. [CLI](https://github.com/h1-hunt/signet-client)
-- **[x402-api](https://x402-api.fly.dev)** — Pay-per-call DeFi & crypto data API. 8 endpoints: price feeds, whale tracking, gas tracker, DEX quotes, token scanner, yield scanner, funding rates, wallet profiler. USDC micropayments on Base. ERC-8004 Agent #18763.
+- [x402-api](https://x402-api.fly.dev) - Pay-per-call DeFi & crypto data API. 8 endpoints: price feeds, whale tracking, gas tracker, DEX quotes, token scanner, yield scanner, funding rates, wallet profiler. USDC micropayments on Base. ERC-8004 Agent #18763.
 - [Hodler DeFi Intelligence](https://x402.hodle.com.br) - Stablecoin monitoring, redeem arbitrage scanning, pegged pair opportunities, and cross-chain pair discovery across 10 EVM chains. 6 paid endpoints at $0.01 USDC each via xpay.sh facilitator on Base.
 - [**Clicks Protocol**](https://clicksprotocol.xyz) - Autonomous yield layer for AI agents on Base. Auto-splits USDC deposits 80/20: 80% liquid, 20% earning via Morpho (~13% APY) or Aave V3. No lockup, 2% fee on yield only. SDK, MCP Server (9 tools), HTTP API. [GitHub](https://github.com/clicks-protocol/clicks-protocol) | [npm](https://www.npmjs.com/package/@clicks-protocol/sdk) | [MCP](https://www.npmjs.com/package/@clicks-protocol/mcp-server)
 - [x402services](https://github.com/x402services/api) - DeFi data APIs for AI agents on Base. 8 endpoints: gas oracle, token price oracle, wallet analyzer, token security scanner, ENS resolution (forward + reverse), DEX trade simulation, and contract event history. $0.001–$0.01 USDC per call on Base (eip155:8453). Bazaar discovery enabled.
-- **[Headless Oracle](https://headlessoracle.com)** — Ed25519-signed market-state receipts for 28 global exchanges (equities, derivatives, crypto). Pre-trade verification gate — UNKNOWN = CLOSED. Real-time session status, holiday-aware calendar, 60-second TTL. $0.001 USDC per call on Base mainnet. MCP-native, x402 Bazaar discoverable. ERC-8004: 8453:38413.
+- [Headless Oracle](https://headlessoracle.com) - Ed25519-signed market-state receipts for 28 global exchanges (equities, derivatives, crypto). Pre-trade verification gate — UNKNOWN = CLOSED. Real-time session status, holiday-aware calendar, 60-second TTL. $0.001 USDC per call on Base mainnet. MCP-native, x402 Bazaar discoverable. ERC-8004: 8453:38413.
 
 ### Developer Tools
 
@@ -746,7 +745,7 @@ Comprehensive guides for migrating from traditional payment systems to x402.
 
 ## 🔒 Security & Audits
 
-*[KaelAi] (https://kaelai.io) - Wallet trust scoring API for the agentic economy. Scores wallets 0-100 across 10 chains with behavioural analysis. Built for x402 servers to vet incoming and outgoing payment wallets before serving or initiating requests. 
+- [KaelAi](https://kaelai.io) - Wallet trust scoring API for the agentic economy. Scores wallets 0-100 across 10 chains with behavioural analysis. Built for x402 servers to vet incoming and outgoing payment wallets before serving or initiating requests. 
 
 - [stripe-mcps](https://www.npmjs.com/package/stripe-mcps) - Trust verification + AML sanctions screening before Stripe/x402 payments. Agent identity (ECDSA), 75K+ sanctions entries (UK HMT + OFAC SDN), behavioural spend limits. OWASP MCP Security Cheat Sheet aligned. ([GitHub](https://github.com/razashariff/stripe-mcps))
 Security resources and best practices for x402 implementations.
@@ -904,11 +903,11 @@ The missing real-world layer for x402. AI agents use AgentPay to find, book and 
 - 7 EVM chains + Solana
 
 **Key endpoints (OpenAPI: [openapi.json](https://www.x402-agent-pay.com/openapi.json)):**
-| Endpoint | Description |
-|---|---|
-|  | Find real businesses near lat/lon — OpenStreetMap |
-|  | Human saves card once (returns customer_id) |
-|  | Agent charges card autonomously per booking |
-|  | Product search — online + local stores |
-|  | All chain info — ETH, Base, Polygon, ARB, OP, AVAX, BNB, SOL |
+| Endpoint     | Description                                                  |
+| ------------ | ------------------------------------------------------------ |
+| (endpoint 1) | Find real businesses near lat/lon — OpenStreetMap            |
+| (endpoint 2) | Human saves card once (returns customer_id)                  |
+| (endpoint 3) | Agent charges card autonomously per booking                  |
+| (endpoint 4) | Product search — online + local stores                       |
+| (endpoint 5) | All chain info — ETH, Base, Polygon, ARB, OP, AVAX, BNB, SOL |
 
